@@ -306,7 +306,7 @@ header{
     border-radius: 0 0 24px 24px;
     background-color: #ffffff;
     clear: both;
-    float: right;
+    float: left;
 }
 .quote-container-l {
     position: relative;
