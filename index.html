@@ -4,21 +4,64 @@
 
 <head>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="application.js"></script>
+	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="aside.css">
 	<title>Quiz</title>
 </head>
 
 <body>
-<div id="wrapper">
-    <nav>
-    </nav>
-    <header>
-    </header>
+<aside id="aside-big">
+	<div id="aside-top">Instagram
+		<div id="aside-close"></div>
+	</div>
+	<div id="insta-tiles">
+		<div class="insta-post">
+			<div class="insta-pic">
+				<div class="insta-pic-overlay">QuizNotion</div>
+			</div>
+			<div class="insta-user-pic">
+					<img src="http:\/\/images.ak.instagram.com\/profiles\/profile_1222661188_75sq_1396106515.jpg" alt="Instagram User Image">
+					<div class="insta-user-pic-overlay"></div>
+				</div>
+			<div class="insta-user-username"><h3>UserName</h3><h4>1 Hour Ago</h4></div>
+			<div class="insta-caption"><p>This is the caption for this instagram photo. It spans two lines of text.</p></div>
+		</div>
+	</div>
+</aside>
+<aside id="aside-small">
+	<div id="aside-open"></div>
+	<div id="insta">
+		Instagram
+	</div>	
+</aside>
+<main>
+<div id="web-bar">
+	<div class="wrapper-big">
+		<div id="login">Login</div>
+	</div>
+</div>
+<header>
+	<div class="wrapper-big">
+		<div id="logo">Q</div>
+		<div id="wordmark">QuizNotion</div>
+		<nav>
+			<div class="nav-link">Create</div>
+			<div class="nav-link">Browse</div>
+			<div class="nav-link">News</div>
+			<div class="nav-link">Blog</div>
+			<div class="nav-link">About</div>
+			<div class="nav-link">Contact Us</div>
+		</nav>
+		<!--<div id="tweet_container"></div>-->
+	</div>
+</header>
+<div class="wrapper-big">
     <div id="left">
         <h1>Mirum est notare:<br>Claritas dynamicus.</h1>       
     </div>
-    <div id="blank"></div>
     <div id="right">
     	<img id="phone" src="iphone5s_1up.png">
         <!--<div id="quiz-box">
@@ -75,68 +118,97 @@
             <div class="next">Next</div>
         </div>-->
     </div>
-	<div class="quote-block">
-		<!--<div class="quote-sayer"><h4 class="quote-sayer-title">The Growth Strategy Co.</h4><p class="quote-sayer-name">Zania Barnum, User Interface Designer</p></div>-->
-		<div class="name-plate">
-			<div class="quote-sayer-image"></div>
-			<h4 class="quote-sayer-title">Company</h4>
-			<p class="quote-sayer-name">Jane Doe, Title</p>
+</div>
+<div class="blue-block">
+	<div class="wrapper-big">
+		<div id="tabs">
+			<div class="tab" id="tab-selected">1</div>
+			<div class="tab">2</div>
+			<div class="tab">3</div>
+			<div class="tab">4</div>
+			<div class="tab">5</div>
+			<div id="tab-blank"></div>
 		</div>
-		<div class="go"><div class="triangle-go"></div>
-		</div>
-		<div class="quote-container-r">
-			<div class="quote-image"></div>
+		<div class="quote-container">
+			<h4 class="quote-sayer-title">Get Familiar</h4>
+			<p class="quote-sayer-name">Do you have what it takes?</p>
+			<div class="quote-image">
+			</div>
 			<h6 class="quote">Duis autem vel eum iriure dolor in hendrerit in velit esse molestie consequat, illum dolore eu feugiat nulla facilisis at vero eros et accumsan.</h6>
 		</div>
-		<div class="form-area">
-			<div class="banner-mini fl"></div>
-			<div class="banner-mini fr"></div>
-			<div id="form-box">
-				<h3 class="light-orange">Join your peers.</h3>
-				<p class="desc">Seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-				<input type="text" val="FirstName" placeholder="First" class="input-name">
-				<input type="text" val="LastName" placeholder="Last" class="input-name zero-margin">
-				<input type="text" val="email" placeholder="Email">
-			</div>
-			<div id="join">
-				<div id="email-me">
-				<input type="checkbox" id="q1" name="p2" value="1">
-                <label for="q1"><span></span>Lorem ipsum dolor!</label>
-                </div>
-				<div class="cta">Join</div>
-			</div>
+	<div class="form-area">
+		<div class="banner-mini fl"><div class="banner-mini-text">news.</div></div>
+		<div class="banner-mini fr"><div class="banner-mini-text">blog.</div></div>
+		<div id="form-box">
+			<h3 class="light-orange">join your peers.</h3>
+			<p class="desc">Seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+			<input type="text" val="FirstName" placeholder="First" class="input-name">
+			<input type="text" val="LastName" placeholder="Last" class="input-name zero-margin">
+			<input type="text" val="email" placeholder="Email">
+		</div>
+		<div id="join">
+			<div id="email-me">
+			<input type="checkbox" id="q1" name="p2" value="1">
+            <label for="q1"><span></span>Lorem ipsum dolor!</label>
+            </div>
+			<div class="cta">Join</div>
 		</div>
 	</div>
-    <div id="quiz-block">
-    	<h2>Lorem Ipsum Dolor Sit Amet</h2>
-		<div class="other-quiz"><h4>15 Questions</h4><div class="marker"></div><h3>Title of a Quiz</h3>
-			<div class="image"></div>
-			<p class="quiz-desc">Typi non habent claritatem insitam; est usus legentis in iis facit eorum claritatem.</p>
-		</div>
-		<div class="other-quiz"><h4>15 Questions</h4><div class="marker"></div><h3>Title of a Quiz</h3>
-			<div class="image"></div>
-			<p class="quiz-desc">Typi non habent claritatem insitam; est usus legentis in iis facit eorum claritatem.</p>
-		</div>
-		<div class="other-quiz"><h4>15 Questions</h4><div class="marker" id="m-blue"></div><h3>Title of a Quiz</h3>
-			<div class="image"></div>
-			<p class="quiz-desc">Typi non habent claritatem insitam; est usus legentis in iis facit eorum claritatem.</p>
-		</div>
-		<div class="other-quiz"><h4>15 Questions</h4><div class="marker"></div><h3>Title of a Quiz</h3>
-			<div class="image"></div>
-			<p class="quiz-desc">Typi non habent claritatem insitam; est usus legentis in iis facit eorum claritatem.</p>
-		</div>
-		<div class="other-quiz"><h4>15 Questions</h4><div class="marker" id="m-blue"></div><h3>Title of a Quiz</h3>
-			<div class="image"></div>
-			<p class="quiz-desc">Typi non habent claritatem insitam; est usus legentis in iis facit eorum claritatem.</p>
-		</div>
-		<div class="other-quiz"><h4>15 Questions</h4><div class="marker"></div><h3>Title of a Quiz</h3>
-			<div class="image"></div>
-			<p class="quiz-desc">Typi non habent claritatem insitam; est usus legentis in iis facit eorum claritatem.</p>
-		</div>
-	</div>
-	<div class="quote-block">
 	</div>
 </div>
+<div class="wrapper-small">    
+	<div class="grey-block" id="bt">
+		<div id="tweet-slogan">they tweet about us.<div id="follow">Follow</div></div>
+		<div class="tweet-lr"><div id="tweet-l"></div></div>
+		<div id="tweet-block">
+			<div id="tweet-image">
+			</div>
+			<div>
+			<h3 id="tweeter">twittername</h3>
+			<h6 id="tweet">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Momodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus etma.</h6><span id="hashtag">#hashtag</span></p>
+			</div>
+		</div>
+		<div class="tweet-lr"><div id="tweet-r"></div></div>
+	</div>
+    <div id="quiz-block">
+    	<h3 class="white">peek into our catalog.</h3>
+		<div class="other-quiz"><h4>15 Questions</h4><div class="marker"></div><h3>Title of a Quiz</h3>
+			<div class="image"></div>
+			<p class="quiz-desc">Typi non habent claritatem insitam; est usus legentis in iis facit eorum claritatem.</p>
+		</div>
+		<div class="other-quiz"><h4>15 Questions</h4><div class="marker"></div><h3>Title of a Quiz</h3>
+			<div class="image"></div>
+			<p class="quiz-desc">Typi non habent claritatem insitam; est usus legentis in iis facit eorum claritatem.</p>
+		</div>
+		<div class="other-quiz"><h4>15 Questions</h4><div class="marker" id="m-blue"></div><h3>Title of a Quiz</h3>
+			<div class="image"></div>
+			<p class="quiz-desc">Typi non habent claritatem insitam; est usus legentis in iis facit eorum claritatem.</p>
+		</div>
+		<div class="other-quiz"><h4>15 Questions</h4><div class="marker"></div><h3>Title of a Quiz</h3>
+			<div class="image"></div>
+			<p class="quiz-desc">Typi non habent claritatem insitam; est usus legentis in iis facit eorum claritatem.</p>
+		</div>
+		<div class="other-quiz"><h4>15 Questions</h4><div class="marker" id="m-blue"></div><h3>Title of a Quiz</h3>
+			<div class="image"></div>
+			<p class="quiz-desc">Typi non habent claritatem insitam; est usus legentis in iis facit eorum claritatem.</p>
+		</div>
+		<div class="other-quiz"><h4>15 Questions</h4><div class="marker"></div><h3>Title of a Quiz</h3>
+			<div class="image"></div>
+			<p class="quiz-desc">Typi non habent claritatem insitam; est usus legentis in iis facit eorum claritatem.</p>
+		</div>
+	</div>
+	<div class="grey-block" id="bb">
+		<h3 class="black">lorem ipsum dolor sit amet.</h3>
+		<div class="plc-img"></div>
+		<div class="plc-img"></div>
+		<div class="plc-img"></div>
+	</div>
+</div>
+<div class="blue-block">
+
+</div>
+</main>
+
 
 
 
